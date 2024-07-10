@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Nunito, sans-serif;
+    transition:.2s linear;
+    outline: none;
+    border:none;
+}
+
+body{
+    background: #E4E0BB;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #E4E0BB;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 1px;
+}
+
+
+.home_ord{
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(../../images/sfondohome.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home_ord h3{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: #38271E;
+}
+
+.main-title{
+    margin-top: 10px;
+    color: #38271E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabular--wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #E4E0BB;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.table-container{
+    width: 75%;
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background: rgba(56,39,30,1);
+    color: #E4E0BB;
+}
+
+th{
+    padding: 15px;
+    text-align: center;
+}
+
+tbody{
+    background: #ffffff;
+}
+
+.ord-img{
+    width: 50%;
+}
+
+td{
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #38271E;
+}
+
+tr:nth-child(even){
+    background: #E4E0BB;
+}
+
+tfoot{
+    background: rgba(56,39,30,0.5);
+    font-weight: bold;
+    color: #E4E0BB;
+}
+
+tfoot td{
+    padding: 15px;
+}
+
+.link-user-rendi{
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 5px 7px;
+    background-color: darkolivegreen;
+    border: 2px solid darkolivegreen;
+    color: #E4E0BB;
+    transition: all .2s linear;
+}
+
+.link-user-rendi:hover{
+    background-color: white;
+    border: 2px solid darkolivegreen;
+    color: darkolivegreen;
+    transition: all .2s linear;
+}
+
+.link-user-remove{
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 5px 7px;
+    background-color: brown;
+    border: 2px solid brown;
+    color: #E4E0BB;
+    transition: all .2s linear;
+}
+
+.link-user-remove:hover{
+    background-color: white;
+    border: 2px solid brown;
+    color: brown;
+    transition: all .2s linear;
+}
+
+.link-user-disabled{
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 5px 7px;
+    background-color: gray;
+    border: 2px solid gray;
+    color: #38271E;
+    transition: all .2s linear;
+}
+
+@media only screen and (max-width: 1200px) {
+    .table-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .tabular--wrapper {
+        flex-wrap: wrap;
+    }
+    .table-container {
+        width: 100%;
+    }
+    .ord-img {
+        width: 100%;
+    }
+    td {
+        font-size: 12px;
+    }
+    .link-user-rendi,
+    .link-user-remove,
+    .link-user-disabled {
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .link-user-rendi,
+    .link-user-remove,
+    .link-user-disabled {
+        padding: 2px 4px;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    thead{
+        display: none;
+    }
+    tbody,
+    tr,
+    th,
+    td {
+        display: block;
+    }
+    tr {
+        border-bottom: 1px solid #ccc;
+    }
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    th,
+    td {
+        font-size: 12px;
+    }
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .main-title{
+        font-size: 1.4rem;
+    }
+    th,
+    td {
+        font-size: 12px;
+    }
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+}

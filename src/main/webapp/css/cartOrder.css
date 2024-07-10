@@ -1,0 +1,175 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');*/
+
+/**{*/
+/*    margin:0;*/
+/*    padding:0;*/
+/*    box-sizing: border-box;*/
+/*    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Nunito, sans-serif;*/
+/*    transition:.2s linear;*/
+/*    outline: none;*/
+/*    border:none;*/
+/*}*/
+
+/*html{*/
+/*    overflow-x: hidden;*/
+/*    scroll-padding-top: 9rem;*/
+/*    scroll-behavior: smooth;*/
+/*}*/
+
+/*html::-webkit-scrollbar{*/
+/*    width: .8rem;*/
+/*}*/
+
+/*html::-webkit-scrollbar-track{*/
+/*    background: #E4E0BB;*/
+/*}*/
+
+/*html::-webkit-scrollbar-thumb{*/
+/*    background: black;*/
+/*    border-radius: 1px;*/
+/*}*/
+
+/*body{*/
+/*    background: #E4E0BB;*/
+/*}*/
+
+/*html{*/
+/*    overflow-x: hidden;*/
+/*    scroll-padding-top: 9rem;*/
+/*    scroll-behavior: smooth;*/
+/*}*/
+
+/*html::-webkit-scrollbar{*/
+/*    width: .8rem;*/
+/*}*/
+
+/*html::-webkit-scrollbar-track{*/
+/*    background: #E4E0BB;*/
+/*}*/
+
+/*html::-webkit-scrollbar-thumb{*/
+/*    background: black;*/
+/*    border-radius: 1px;*/
+/*}*/
+
+
+/*.home_ord{*/
+/*    min-height: 30vh;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    background:url(../images/sfondohome.jpg) no-repeat;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    background-attachment: fixed;*/
+/*}*/
+
+/*.home_ord h3{*/
+/*    font-size: 4.5rem;*/
+/*    text-transform: uppercase;*/
+/*    color: #38271E;*/
+/*}*/
+
+/*.main-title{*/
+/*    margin-top: 10px;*/
+/*    color: #38271E;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.tabular--wrapper{*/
+/*    margin: 0px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    padding: 0px;*/
+/*}*/
+
+/*.table-container{*/
+/*    border-radius: 10px;*/
+/*    background: #ffffff;*/
+/*    width: 100%;*/
+/*}*/
+
+/*table{*/
+/*    width: 100%;*/
+/*    border-collapse: collapse;*/
+/*}*/
+
+/*.cart-info{*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.link-user{*/
+/*    text-decoration: none;*/
+/*    border-radius: 1px;*/
+/*    text-transform: uppercase;*/
+/*    padding: 2px 5px;*/
+/*    background-color: #A0602B;*/
+/*    border: 2px solid #A0602B;*/
+/*    color: #E4E0BB;*/
+/*    transition: all .2s linear;*/
+/*}*/
+
+/*.link-user:hover {*/
+/*    background-color: #E4E0BB;*/
+/*    color: #A0602B;*/
+/*}*/
+
+
+/*th{*/
+/*    text-align: left;*/
+/*    padding: 5px;*/
+/*    color: #E4E0BB;*/
+/*    background: #38271E;*/
+/*    font-weight: normal;*/
+/*}*/
+
+/*td{*/
+/*    padding: 10px 5px;*/
+/*}*/
+
+/*td input{*/
+/*    width: 40px;*/
+/*    height: 30px;*/
+/*    padding: 5px;*/
+/*}*/
+
+/*td a{*/
+/*    color: #38271E;*/
+/*    font-size: 12px;*/
+/*}*/
+
+/*td img{*/
+/*    width: 80px;*/
+/*    height: 80px;*/
+/*    margin-right: 10px;*/
+/*    border: 1px solid #38271E;*/
+/*}*/
+
+/*.total-price{*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*}*/
+
+/*.total-price table{*/
+/*    border-top: 3px solid #38271E;*/
+/*    width: 100%;*/
+/*    max-width: 350px;*/
+/*}*/
+
+/*td:last-child{*/
+/*    text-align: right;*/
+/*}*/
+
+/*th:last-child{*/
+/*    text-align: right;*/
+/*}*/
+
+/*@media only screen and(max-width: 600px){*/
+/*    .cart-info p{*/
+/*        display: none;*/
+/*    }*/
+/*}*/

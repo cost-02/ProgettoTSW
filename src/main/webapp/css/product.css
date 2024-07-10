@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Nunito, sans-serif;
+    transition:.2s linear;
+    outline: none;
+
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #E4E0BB;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 1px;
+}
+
+
+.home_ord{
+    min-height: 30vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background:url(../images/sfondohome.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home_ord .container_ord{
+    max-width: 60rem;
+}
+
+.home_ord .container_ord h3{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: #38271E;
+}
+
+body{
+    background: #f2f2f2;
+}
+section{
+    padding: 20px;
+    width: 100%;
+}
+
+section ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+section ul li{
+    list-style: none;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: #E4E0BB;
+    border: 2px solid #A0602B;
+}
+
+section ul li.active{
+    background: #A0602B;
+    color: #E4E0BB;
+}
+
+.list:hover{
+    background-color: #A0602B;
+    color: #E4E0BB;
+}
+
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product .itemBox{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+
+.product .itemBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buttons {
+    gap: 5%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.buttons a{
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    flex: 1 1 16rem;
+    padding: 10px 15px;
+    background-color: #A0602B;
+    border: 2px solid #A0602B;
+    color: #E4E0BB;
+    transition: all .2s linear;
+}
+
+.buttons a:hover {
+    background-color: #E4E0BB;
+    color: #A0602B;
+}
+
+.buttons input{
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    flex: 1 1 16rem;
+    padding: 10px 15px;
+    background-color: #A0602B;
+    border: 2px solid #A0602B;
+    color: #E4E0BB;
+    transition: all .2s linear;
+}
+
+.buttons input:hover {
+    background-color: #E4E0BB;
+    color: #A0602B;
+}
+
+.container{
+    background: #f2f2f2;
+}
+
+.container .title{
+    font-size: 2.5rem;
+    color:#38271E;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.container .product-container {
+    gap: 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    position: relative;
+    width: 20%;
+    height: 370px;
+    transition: 0.3s ease-out;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.7);
+}
+
+.card .imgbox{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+}
+
+.card .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    display: block;
+    transition: 0.5s;
+}
+
+.card .content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    padding: 12px;
+    background: #E4E0BB;
+    transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card:hover .content{
+    width: 100%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+}
+
+.content p{
+    padding: 4%;
+    line-height: 1.3em;
+    transition: 0.3s;
+    text-align: justify;
+    opacity: 0;
+}
+
+.card:hover .content p{
+    transform: translateY(-1rem);
+    opacity: 1;
+}
+
+h2, .price{
+    text-align: center;
+}
+
+@media only screen and (max-width: 1431px) {
+    .card {
+        width: 25%;
+        margin: 6px 0;
+        height: 300px;
+    }
+    .content {
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 1149px) {
+    .card {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 931px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .card {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 464px) {
+    .card {
+        width: 80%;
+    }
+    .home_ord .container_ord h3 {
+        font-size: 300%;
+    }
+}
+
+@media only screen and (max-width: 381px) {
+    .card {
+        width: 100%;
+        font-size: 90%;
+    }
+    .home_ord .container_ord h3 {
+        font-size: 250%;
+    }
+    .buttons {
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (max-width: 285px) {
+    .card {
+        font-size: 85%;
+    }
+    .buttons {
+        margin-top: 10px;
+    }
+}

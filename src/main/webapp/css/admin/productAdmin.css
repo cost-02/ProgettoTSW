@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #E4E0BB;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 1px;
+}
+
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../../images/sfondologin.jpeg");
+}
+
+.add_prod_title{
+    text-transform: uppercase;
+    color: #38271E;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.update_product {
+    border-radius: 5px;
+    background-color: #E4E0BB;
+    padding: 20px;
+    margin: 5% 25%;
+    display: flex; /*allinea gli elementi uno di fianco all'altro*/
+    flex-wrap: wrap; /*se ho un elemento in più va daccapo*/
+    justify-content: center;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.btn_update{
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 1rem;
+    background-color: #A0602B;
+    border: 2px solid  #E4E0BB;
+    color: #E4E0BB;
+    transition: all .2s linear;
+}
+
+.btnadd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_update:hover{
+    background-color: #E4E0BB;
+    border: 2px solid #A0602B;
+    color: #A0602B;
+    transition: all .2s linear;
+}
+
+.btn_delete{
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 1rem;
+    background-color: brown;
+    border: 2px solid  #E4E0BB;
+    color: #E4E0BB;
+    transition: all .2s linear;
+}
+
+.btn_delete:hover{
+    background-color: #E4E0BB;
+    border: 2px solid brown;
+    color: brown;
+    transition: all .2s linear;
+}
+
+@media only screen and (max-width: 1200px) {
+    .update_product {
+        margin: 5% 2%;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .update_product {
+        margin: 10% 2%;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .update_product {
+        margin: 15% 2%;
+        padding: 10px;
+    }
+    .add_prod_title {
+        font-size: 2rem;
+    }
+    input[type=text],
+    textarea {
+        max-height: 100px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .update_product {
+        margin: 20% 2%;
+        padding: 5px;
+    }
+    .add_prod_title {
+        font-size: 1.8rem;
+    }
+    input[type=text],
+    textarea {
+        max-height: 80px;
+    }
+}
+

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Nunito, sans-serif;
+    transition:.2s linear;
+    outline: none;
+    border:none;
+
+}
+
+body{
+    background: #E4E0BB;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #E4E0BB;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 1px;
+}
+
+
+.home_ord{
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(../../images/sfondohome.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home_ord h3{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: #38271E;
+}
+
+.main-title{
+    margin-top: 10px;
+    color: #38271E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabular--wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E4E0BB;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.table-container{
+    width: 50%;
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background: rgba(56,39,30,1);
+    color: #E4E0BB;
+}
+
+th{
+    padding: 15px;
+    text-align: center;
+}
+
+tbody{
+    background: #ffffff;
+}
+
+.ord-img{
+    width: 50%;
+}
+
+td{
+    padding: 15px;
+    font-size: 14px;
+    color: #38271E;
+}
+
+tr:nth-child(even){
+    background: #E4E0BB;
+}
+
+tfoot{
+    background: rgba(56,39,30,0.5);
+    font-weight: bold;
+    color: #E4E0BB;
+}
+
+tfoot td{
+    padding: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+    .table-container {
+        overflow-x: scroll;
+    }
+    table {
+        font-size: 12px;
+    }
+    th, td {
+        padding: 8px;
+    }
+    .ord-img {
+        display: none;
+    }
+    .tabular--wrapper {
+        padding: 1rem;
+    }
+    .main-title {
+        font-size: 1.5rem;
+    }
+    .home_ord h3 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+}

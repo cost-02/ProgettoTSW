@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/administrator/addProduct.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/administrator" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/administrator/category.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/administrator" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/administrator/homeAdmin.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/administrator" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/administrator/manageProduct.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/administrator" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/administrator/orders.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/administrator" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/administrator/product.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/administrator" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/results/cart.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/results" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/results/checkout.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/results" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/results/order.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/results" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/results/orders.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/results" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/results/product.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/results" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/registrationForm.html" value="file://$PROJECT_DIR$/src/main/webapp" />
+      </map>
+    </option>
+  </component>
+</project>

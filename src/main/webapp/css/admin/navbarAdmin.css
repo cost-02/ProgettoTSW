@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Nunito, sans-serif;
+    transition:.2s linear;
+    outline: none;
+    border:none;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    background: #E4E0BB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.header .logo ul {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.header a {
+    margin: 0 1rem;
+    color: #38271E;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header .links a:hover {
+    color: #A06028;
+    border-bottom: 1px solid gray;
+    padding-bottom: .5rem;
+}
+
+.header .toggle_btn {
+    color: #38271E;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: #A06028;
+    color: #38271E;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.action_btn:hover {
+    transform: scale(1.05);
+    color: #E4E0BB;
+}
+
+.action_btn:active {
+    transform: scale(0.95);
+}
+
+.menu li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    color: #38271E;
+    transition: 0.3s;
+}
+
+.sub-menu {
+    position: absolute;
+    right: 0;
+    border: 1px solid #C8934F;
+    border-bottom: none;
+    visibility: hidden;
+    opacity: 0;
+    background: #E4E0BB;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 100;
+}
+
+.menu .has-children:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sub-menu li {
+    width: auto;
+    font-size: 16px;
+    border-bottom: 1px solid #C8934F;
+    padding: 15px 10px;
+}
+
+.sub-menu a {
+    color: #38271E;
+}
+
+.sub-menu a:hover {
+    background: #C8934F;
+    color: #38271E;
+}
+
+/* DROPDOWN MENU */
+.dropdown_menu {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: none;
+    right: 0;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: fixed;
+    color: #38271E;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown_menu.open {
+    display: block;
+    height: auto;
+    z-index: 1000;
+    padding: 1rem;
+    backdrop-filter: blur(15px);
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_admin{
+    background-color: #A06028;
+    color: #38271E;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 1200px) {
+    .header .logo ul {
+        font-size: 0.5rem;
+    }
+    .header a {
+        margin: 0 0.5rem;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .header .links,
+    .header .action_btn {
+        display: none;
+    }
+    .header .toggle_btn {
+        display: block;
+    }
+    .dropdown_menu {
+        display: none;
+    }
+    .dropdown_menu a {
+        color: #38271E;
+        font-weight: bold;
+    }
+    .header .logo {
+        font-size: 1.2rem;
+    }
+    .header .logo ul {
+        font-size: 1.2rem;
+    }
+    .header .links {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .logo {
+        font-size: 1rem;
+    }
+    .header .logo ul {
+        font-size: 1rem;
+    }
+    .header .links {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        width: 100%;
+        top: 55px;
+    }
+    .header .links {
+        display: none;
+    }
+    .header .toggle_btn {
+        display: block;
+    }
+    .header .logo {
+        font-size: 1rem;
+    }
+    .header .logo ul {
+        font-size: 1rem;
+    }
+}

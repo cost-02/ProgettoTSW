@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #E4E0BB;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 1px;
+}
+
+.tabular--wrapper{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.table-container{
+    border-radius: 10px;
+    background: #ffffff;
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.return{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.return-prod{
+    text-decoration: none;
+    border-radius: 1px;
+    text-transform: uppercase;
+    padding: 4px 6px;
+    background-color: #A0602B;
+    border: 2px solid #A0602B;
+    color: white;
+    transition: all .2s linear;
+}
+
+.return-prod:hover {
+    background-color: white;
+    color: #A0602B;
+}
+
+.link-user{
+    text-decoration: none;
+    border-radius: 1px;
+    text-transform: uppercase;
+    padding: 2px 5px;
+    background-color: #A0602B;
+    border: 2px solid #A0602B;
+    color: white;
+    transition: all .2s linear;
+}
+
+.link-user:hover {
+    background-color: white;
+    color: #A0602B;
+}
+
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #E4E0BB;
+    background: #38271E;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color: #38271E;
+    font-size: 12px;
+}
+
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3px solid #38271E;
+    width: 100%;
+    max-width: 350px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #C8934F 60%, #AE7349 40.1%);
+    flex-wrap: wrap;
+}
+
+.container form{
+    padding:20px;
+    width:700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+
+}
+
+.container form .row .col{
+    flex:1 1 250px;
+}
+
+.container form .row .col .title{
+    font-size: 20px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+    margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container form .row .col .inputBox input{
+    width: 100%;
+    border:1px solid #ccc;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+    border:1px solid #000;
+}
+
+.container form .row .col .flex{
+    display: flex;
+    gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+    margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: #A0602B;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.container form .submit-btn:hover{
+    background: #38271E;
+}
+
+.link-user-rendi{
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    /*flex: 1 1 16rem;*/
+    padding: 5px 7px;
+    background-color: darkolivegreen;
+    border: 2px solid darkolivegreen;
+    color: #E4E0BB;
+    transition: all .2s linear;
+    display: flex;
+}
+
+.link-user-rendi:hover{
+    background-color: white;
+    border: 2px solid darkolivegreen;
+    color: darkolivegreen;
+    transition: all .2s linear;
+}
+
+.col-metod{
+    padding: 20px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+@media (min-width: 1450px) {
+    .container{
+        flex-flow: column;
+    }
+}
+
+@media (max-width: 334px) {
+    table{
+        overflow-wrap: anywhere;
+    }
+}
+

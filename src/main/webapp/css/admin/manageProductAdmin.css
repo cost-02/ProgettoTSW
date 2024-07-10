@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #E4E0BB;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 1px;
+}
+
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../../images/sfondologin.jpeg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #E4E0BB;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: #A06028;
+}
+
+.cards-products{
+    padding: 1rem;
+    display: flex; /*allinea gli elementi uno di fianco all'altro*/
+    flex-wrap: wrap; /*se ho un elemento in più va daccapo*/
+    justify-content: center;
+}
+
+.card-product {
+    margin: 5px 0px 5px 0px;
+    padding: 0 6px;
+    width: 15%;
+}
+
+div.card-body {
+    background: #C8934F;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+
+div.card-body img {
+    width: 100%;
+    height: 50%;
+}
+
+h4.card-title {
+    padding: 0px;
+    text-align: center;
+}
+
+div.card-price {
+    padding: 0 15px 0px 15px;
+    text-align: center;
+}
+
+.div-btn {
+    padding: 5px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-card{
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    flex: 1 1 16rem;
+    padding: 10px 15px;
+    background-color: #A0602B;
+    border: 2px solid #A0602B;
+    color: #E4E0BB;
+    transition: all .2s linear;
+}
+
+.btn-card:hover {
+    background-color: #ffffff;
+    border: 2px solid #A0602B;
+    color: #A0602B;
+    transition: all .2s linear;
+}
+
+@media only screen and (max-width: 1500px) {
+    .card-product {
+        width: 20%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .card-product {
+        width: 25%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .card-product {
+        width: 30%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .card-product {
+        width: 43%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card-product {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .card-product {
+        width: 90%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
